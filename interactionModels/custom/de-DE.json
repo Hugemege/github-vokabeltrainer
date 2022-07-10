@@ -1,0 +1,519 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "papas vokabeltrainer",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "CaptureSchoolTypeIntent",
+          "slots": [
+            {
+              "name": "school",
+              "type": "school"
+            }
+          ],
+          "samples": [
+            "{school}"
+          ]
+        },
+        {
+          "name": "GetKlassenIntent",
+          "slots": [
+            {
+              "name": "klasse",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "die {klasse} te",
+            "die {klasse} te Klasse",
+            "In die {klasse} te Klasse",
+            "Klasse {klasse}",
+            "{klasse} te",
+            "{klasse} te Klasse",
+            "{klasse}"
+          ]
+        },
+        {
+          "name": "GetLanguageIntent",
+          "slots": [
+            {
+              "name": "language",
+              "type": "language"
+            }
+          ],
+          "samples": [
+            "{language}"
+          ]
+        },
+        {
+          "name": "GetUnitIntent",
+          "slots": [
+            {
+              "name": "unit",
+              "type": "unit"
+            }
+          ],
+          "samples": [
+            "{unit}"
+          ]
+        },
+        {
+          "name": "GetChapterIntent",
+          "slots": [
+            {
+              "name": "chapter",
+              "type": "chapter"
+            }
+          ],
+          "samples": [
+            "{chapter}"
+          ]
+        },
+        {
+          "name": "GetUserNameIntent",
+          "slots": [
+            {
+              "name": "firstname",
+              "type": "AMAZON.DE_FIRST_NAME"
+            }
+          ],
+          "samples": [
+            "{firstname}"
+          ]
+        },
+        {
+          "name": "EnglishIntent",
+          "slots": [],
+          "samples": [
+            "let us begin",
+            "Yes I do",
+            "I do",
+            "I will",
+            "Yes",
+            "Yes I will"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "mittelschule"
+              }
+            },
+            {
+              "name": {
+                "value": "gymnasium"
+              }
+            },
+            {
+              "name": {
+                "value": "realschule"
+              }
+            }
+          ],
+          "name": "school"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "französisch"
+              }
+            },
+            {
+              "name": {
+                "value": "lateinisch"
+              }
+            },
+            {
+              "name": {
+                "value": "latein"
+              }
+            },
+            {
+              "name": {
+                "value": "englisch"
+              }
+            }
+          ],
+          "name": "language"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "unit seven"
+              }
+            },
+            {
+              "name": {
+                "value": "unit six"
+              }
+            },
+            {
+              "name": {
+                "value": "unit five"
+              }
+            },
+            {
+              "name": {
+                "value": "unit four"
+              }
+            },
+            {
+              "name": {
+                "value": "unit three"
+              }
+            },
+            {
+              "name": {
+                "value": "unit two"
+              }
+            },
+            {
+              "name": {
+                "value": "unit one"
+              }
+            },
+            {
+              "name": {
+                "value": "Unit 7"
+              }
+            },
+            {
+              "name": {
+                "value": "Unit 6"
+              }
+            },
+            {
+              "name": {
+                "value": "Unit 5"
+              }
+            },
+            {
+              "name": {
+                "value": "Unit 4"
+              }
+            },
+            {
+              "name": {
+                "value": "Unit 3"
+              }
+            },
+            {
+              "name": {
+                "value": "Unit 2"
+              }
+            },
+            {
+              "name": {
+                "value": "Unit 1"
+              }
+            }
+          ],
+          "name": "unit"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Across cultures 3"
+              }
+            },
+            {
+              "name": {
+                "value": "Focus 3"
+              }
+            },
+            {
+              "name": {
+                "value": "Focus 2"
+              }
+            },
+            {
+              "name": {
+                "value": "Across cultures 1"
+              }
+            },
+            {
+              "name": {
+                "value": "Across cultures 2"
+              }
+            },
+            {
+              "name": {
+                "value": "Unit task"
+              }
+            },
+            {
+              "name": {
+                "value": "Focus 1"
+              }
+            },
+            {
+              "name": {
+                "value": "check out"
+              }
+            },
+            {
+              "name": {
+                "value": "Story"
+              }
+            },
+            {
+              "name": {
+                "value": "Skills"
+              }
+            },
+            {
+              "name": {
+                "value": "Station 2"
+              }
+            },
+            {
+              "name": {
+                "value": "Station 1"
+              }
+            },
+            {
+              "name": {
+                "value": "Check in"
+              }
+            }
+          ],
+          "name": "chapter"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CaptureSchoolTypeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "school",
+              "type": "school",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1615935746396.211335335921.1400680331401"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GetKlassenIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "klasse",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "isInSet",
+                  "prompt": "Slot.Validation.1301944031338.276344712010.1165933149059",
+                  "values": [
+                    "11",
+                    "12",
+                    "13",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                  ]
+                }
+              ]
+            }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+        },
+        {
+          "name": "GetLanguageIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "language",
+              "type": "language",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.196521896787.984992798734.267639236991"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GetUnitIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "unit",
+              "type": "unit",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1376417962342.682320830764.453955481868"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.246822478306.803946891575",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welchen Schultyp besuchst du?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1615935746396.211335335921.1400680331401",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welchen Schultyp besuchst du?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.929734883763.918085342711.1195642839656",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "In welche Klasse gehst du aktuell?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.929734883763.918085342711.180373379954",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "In welche Klasse gehst du aktuell?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.674520190445.1444542887268.107341969512",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "In welcher Klasse bist du aktuell?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.287798168187.431831284122.723910620135",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "welche klasse bitte?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.287798168187.431831284122.724482795386",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "welche klasse bitte?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.682936648317.1095302728830.939818452512",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "In welche Klasse gehst du?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.196521896787.984992798734.267639236991",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welche Sprache möchtest du heute lernen?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1301944031338.276344712010.1165933149059",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welche Jahrgangsstufe besuchst du aktuell?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.430787641805.1500329960635.218734958924",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Welche Unit möchtest du trainieren?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1376417962342.682320830764.453955481868",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Bitte sag Unit und dann die Nummer die du lernen möchtest."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "58"
+}

@@ -1,0 +1,43 @@
+{
+	"de": {
+		"type": "SSML",
+		"SKILL_NAME": "<speak>Vokabeltainer für weiterführende Schulen</speak>",
+		"WELCOME_BACK_MESSAGE": "<speak> Servus {}, schön dass du wieder hier bist! </speak>",
+		"WELCOME_BACK_GYMNASIUM_MESSAGE": "<speak> Wenn ich mich noch richtig erinnere, dann besuchst du aktuell das {} </speak>",
+		"WELCOME_BACK_REALSCHULE_MESSAGE": "<speak> Wenn ich mich noch richtig erinnere, dann besuchst du aktuell die {} </speak>",
+		"WELCOME_BACK_MITTELSCHULE_MESSAGE": "<speak> Wenn ich mich noch richtig erinnere, dann besuchst du aktuell die {} </speak>",
+		"WELCOME_BACK_CLASS_MESSAGE": "<speak> und bist in der {}ten Klasse.</speak>",
+		"WELCOME_BACK_LANGUAGE_MESSAGE": "<speak> Beim letzten Mal haben wir gemeinsam {} trainiert.</speak>",
+		"WELCOME_BACK_WORDSCHATZ_MESSAGE": "<speak> Wir waren beim {}, </speak>",
+		"WELCOME_BACK_UNIT_MESSAGE": "<speak> Wir waren, das letzte Mal bei der {}.</speak>",
+		"REQUEST_CONTINUE_NO_GYM_MESSAGE": "<speak>Möchtest du hier weitermachen oder ein neues Kapitel beginnen? Wenn ja, dann gib mir ein YES, ansonsten ein NO um deine Daten zu überarbeiten!</speak>",
+		"REQUEST_CONTINUE_GYM_MESSAGE": "<speak> möchtest du hier weitermachen oder einen neuen Wortschatz beginnen? Wenn ja, dann gib mir ein YES, ansonsten ein NO um deine Daten zu überarbeiten!</speak>",
+		"START_MESSAGE": "<speak>Hallo und herzlich willkommen bei deinem persönlichen Vokabeltrainer für deine Schule. Damit dieses Training ein bißchen persönlicher von stattengeht, würde ich gerne deinen Namen wissen. Wie heißt du?</speak>",
+		"WELCOME_MESSAGE": "<speak>Hallo {}, schön dass du heute mit mir trainieren möchtest. Um deinen Vokabelbereich genauer auf deine Bedürfnisse anzupassen, würde ich gerne wissen welche Schule du besuchst. Auf welche Schule gehst du aktuell?</speak>",
+		"WELCOME_LANGUAGE_MESSAGE": "<speak>Du möchtest also heute {} mit mir üben.</speak>",
+		"WELCOME_LANGUAGE_GYMNASIUM_MESSAGE": "<speak>OK, willkommen bei deinem Vokabeltrainer für die {}. Welche Sprache möchtest du heute trainieren? Zur Auswahl stehen Latein, Englisch und Französisch.</speak>",
+		"WELCOME_LANGUAGE_REALSCHULE_MESSAGE": "<speak>OK, willkommen bei deinem Vokabeltrainer für das {}. Welche Sprache möchtest du heute trainieren? Zur Auswahl stehen Englischund Französisch.</speak>",
+		"WELCOME_LANGUAGE_MITTELSCHULE_MESSAGE": "<speak>OK, willkommen bei deinem Vokabeltrainer für die {}. Welche Sprache möchtest du heute trainieren? Zur Auswahl steht Englisch.</speak>",
+		
+		"REPROMPT_NAME_MESSAGE": "<speak>Ich habe dich anscheinend nicht richtig verstanden. Könntest du mir bitte deinen Vornamen nennen?</speak>",
+		"REPROMPT_LANGUAGE_MESSAGE": "<speak>Könntest du mir bitte die gewünschte Fremdsprache wiederholen?</speak>",
+		"REPROMPT_SCHOOL_MESSAGE": "<speak>Ich habe dich anscheinend nicht richtig verstanden. Könntest du mir bitte deine Schule nennen? Zur Auswahl stehen Gymnasium, Ralschule und Mittelschule</speak>",
+		
+		"GET_LANGUAGE_MESSAGE": "<speak>Du möchtest also heute {} mit mir üben.</speak>",
+		"GET_CHAPTER_MESSAGE":  "<speak>Alles klar, dann greifen wir heute das Chapter: {} an. <lang xml:lang='en-GB'> Are you ready? So, if you want starting, give me a YES or a NO for go back, please!</lang></speak>",
+		"START_ENGLISCH_SESSION": "<speak><lang xml:lang='en-GB'>In this chapter we have {} words. Are you ready to rumble!? Let us start with the first word. </lang></speak>",
+        "ASK_ENGLISCH_WORD": "<speak><lang xml:lang='en-GB'> What is the german meaning of:<break time='500ms'/>{}</lang></speak>",
+	
+	
+	
+		"NO_DATA_MESSAGE": "<speak>Ich konnte leider keine Daten finden.</speak>",
+		"HELP_MESSAGE": "<speak>Du kannst sagen, bitte neu beginnen, oder fang von vorne an. Wie kann ich dir helfen?</speak>",
+		"HELP_REPROMPT": "<speak>Wie kann ich dir helfen?</speak>",
+		"FALLBACK_MESSAGE": "<speak>Der Vokabeltrainer kann deine Anfrage gerade nicht verarbeiten. Wie kann ich dir helfen?</speak>",
+		"FALLBACK_REPROMPT": "<speak>Wie kann ich dir helfen?</speak>",
+		"ERROR_MESSAGE": "<speak>Na toll, anscheinend ist gerade ein Fehler aufgetreten.</speak>",
+		"STOP_MESSAGE": "<speak>Servus, bis zum nächsten mal!</speak>"
+		
+	}
+	}
+	
